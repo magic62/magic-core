@@ -12,7 +12,7 @@ export const SHADOW_ESSENCE  = std.Items.create("magic-core", "shadow-essence")
     .MaxStack.set(5)
 
 const THE_HILLS_OF_ELWYNN_1 = std.Quests.create("magic-core", "hills-of-elwynn-1")
-    .Name.enGB.set("Cliffs of Elwynn")
+    .Name.enGB.set("The Hills of Elwynn")
     .PickupText.enGB.set("")
     .ObjectiveText.enGB.set("Collect 5 Shadow Essence from Chaotic Shadows and return to Robert Steelman in Elwynn Forest.")
     .IncompleteText.enGB.set("")
