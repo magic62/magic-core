@@ -1,0 +1,25 @@
+import { std } from "wow/wotlk";
+
+const ICE_ROD = std.Items.create("magic-core", "ice-rod")
+    .Name.enGB.set("Ice Rod")
+    .Bonding.BINDS_ON_PICKUP.set()
+    .DisplayInfo.set(20378)
+    .Class.STAFF.set()
+    .InventoryType.TWOHAND.set()
+    .Quality.BLUE.set()
+    .SheatheType.set(2)
+    .Damage.addPhysical(21, 32)
+    .Delay.set(3200)
+    .Durability.set(60)
+    .Price.PlayerSellPrice.set(1330)
+    .ItemLevel.set(12)
+    .MaxStack.set(1)
+    .Stats.addStamina(4)
+    .Stats.addIntellect(7)
+    .Stats.addCritSpellRating(12)
+    .Spells.addMod(spell =>
+        spell
+            .Spell.set(43428)
+            .Cooldown.set(60000)
+            .Trigger.ON_USE.set()
+    )
