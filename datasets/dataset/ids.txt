@@ -1,8 +1,11 @@
 ItemDisplayInfo|mod:id_display|70000|70000|
 Lock|magic-core:object-locked|2001|2001|
 Lock|magic-core:spooky-chest-lock|2000|2000|
+Spell|magic-core:create-iron|80906|80906|
+Spell|magic-core:dummy-spell|80907|80907|
 Spell|magic-core:jom-gabbar-aura|80900|80900|
 Spell|magic-core:jom-gabbar-trinket|80901|80901|
+Spell|magic-core:shadow-blast|80905|80905|
 Spell|magic-core:shard-of-affinity-aura|80902|80902|
 Spell|magic-core:shard-of-affinity-spell|80904|80904|
 Spell|magic-core:shard-of-affinity-stacks|80903|80903|
