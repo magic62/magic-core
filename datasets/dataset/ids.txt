@@ -5,6 +5,9 @@ Spell|magic-core:create-iron|80906|80906|
 Spell|magic-core:dummy-spell|80907|80907|
 Spell|magic-core:jom-gabbar-aura|80900|80900|
 Spell|magic-core:jom-gabbar-trinket|80901|80901|
+Spell|magic-core:scroll-of-knowledge-aura|80908|80908|
+Spell|magic-core:scroll-of-knowledge-item|80909|80909|
+Spell|magic-core:scroll-of-knowledge-spell|80910|80910|
 Spell|magic-core:shadow-blast|80905|80905|
 Spell|magic-core:shard-of-affinity-aura|80902|80902|
 Spell|magic-core:shard-of-affinity-spell|80904|80904|
@@ -48,6 +51,7 @@ item_template|magic-core:ice-rod|60006|60006|
 item_template|magic-core:jom-gabbar|60008|60008|
 item_template|magic-core:linen-cloth|60002|60002|
 item_template|magic-core:roberts-ring|60012|60012|
+item_template|magic-core:scroll-of-knowledge|60013|60013|
 item_template|magic-core:shadow-essence|60010|60010|
 item_template|magic-core:shard-of-affinity|60009|60009|
 item_template|magic-core:test-item|60000|60000|

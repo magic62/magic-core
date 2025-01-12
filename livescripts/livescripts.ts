@@ -1,3 +1,5 @@
+import { teleport } from "./teleport";
+
 export function Main(events: TSEvents) {
-    // Register your events here!
+    teleport(events)
 }

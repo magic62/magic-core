@@ -1,0 +1,33 @@
+import { std } from "wow/wotlk";
+
+const SCROLL_OF_KNOWLEDGE_AURA = std.Spells.create('magic-core', 'scroll-of-knowledge-aura')
+    .Name.enGB.set("Scroll of Knowledge")
+    .AuraDescription.enGB.set("You may teleport to your faction's major cities.")
+    .Description.enGB.set("Gain the ability to teleport to your faction's major cities.")
+    .Icon.setPath("spell_shadow_teleport")
+    .Range.set(1)
+    .Duration.setSimple(86400000)
+    .Visual.set(7265)
+    .Effects.addMod(eff => eff
+        .Type.APPLY_AURA.set()
+        .Aura.DUMMY.set()
+        .ImplicitTargetA.UNIT_CASTER.set()
+    )
+    .Tags.addUnique("magic-core", "SCROLL_OF_KNOWLEDGE_AURA")
+    .Attributes.IS_HIDDEN_FROM_LOG.set(true)
+    .Attributes.AURA_VISIBLE_TO_CASTER_ONLY.set(true)
+    .Attributes.CANT_BE_CANCELED.set(true)
+
+const SCROLL_OF_KNOWLEDGE = std.Items.create('magic-core', 'scroll-of-knowledge')
+    .Name.enGB.set('Scroll of Knowledge')
+    .DisplayInfo.set(2616)
+    .Class.SCROLL.set()
+    .Material.CLOTH.set()
+    .Quality.WHITE.set()
+    .BagFamily.set(['NONE', 'INSCRIPTION_SUPPLIES'])
+    .Price.PlayerSellPrice.set(1000)
+    .Spells.addMod(spell => spell
+        .Spell.set(SCROLL_OF_KNOWLEDGE_AURA.ID)
+        .Charges.Raw.set(-1)
+        .Trigger.ON_USE.set()
+    )

@@ -1,0 +1,1 @@
+export const SCROLL_OF_KNOWLEDGE_AURA = UTAG("magic-core", "SCROLL_OF_KNOWLEDGE_AURA")
