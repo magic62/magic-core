@@ -1,3 +1,6 @@
+import { Creatures } from "./creatures/init";
+
+// Load all scripts
 export function Main(events: TSEvents) {
-    // Register your events here!
+    Creatures(events)
 }

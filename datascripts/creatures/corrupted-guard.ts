@@ -1,4 +1,5 @@
 import { SQL, std } from "wow/wotlk";
+import { DUMMY_SPELL } from "../spells/dummy";
 
 export const CORRUPTED_MEDALLION = std.Items.create("magic-core", "corrupted-medallion")
     .Name.enGB.set("Corrupted Medallion")
@@ -51,6 +52,12 @@ export const CORRUPTED_GUARD = std.CreatureTemplates.create("magic-core", "corru
     })
 
     .Models.addIds(MODEL.ID)
+
+    .Scripts.onSpellhit(DUMMY_SPELL.ID, 0, 5000, 5000, script => script
+        .Action.setTalk({enGB: "I have been hit by a dummy spell!"}, 0)
+        .Target.setSelf()
+        .Chance.set(50)
+    )
 
 const SPAWNS = [
     {map:0,x:-5709.107910,y:-549.013062,z:398.620911,o:4.522612},

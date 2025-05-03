@@ -1,11 +1,12 @@
 import { SQL, std } from "wow/wotlk";
 import { SHADOW_ESSENCE } from "../quests/the-hills-of-elwynn";
+import { SHADOW_BLAST } from "../spells/shadow-blast";
 
 const CHAOTIC_SHADOW = std.CreatureTemplates.create("magic-core", "chaotic-shadow")
     .Name.enGB.set("Chaotic Shadow")
     .Level.set(9, 10)
     .FactionTemplate.NEUTRAL_HOSTILE.set()
-    .UnitClass.WARRIOR.set()
+    .UnitClass.MAGE.set()
     .Type.DEMON.set()
     .Rank.NORMAL.set()
     .Models.addIds(1132)
@@ -18,6 +19,10 @@ const CHAOTIC_SHADOW = std.CreatureTemplates.create("magic-core", "chaotic-shado
 
         SQL.creature_loot_template.query({ Entry: loot.ID, Item: 2589 }).delete()
     })
+    .Scripts.onUpdateIc(2000, 4000, 6000, 8000, script => script
+        .Action.setCast(SHADOW_BLAST.ID, 0, 0)
+        .Target.setVictim()
+    )
 
 const SPAWNS = [
     {map:0,x:-8538.237305,y:-529.262268,z:144.827927,o:2.624370},
