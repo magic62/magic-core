@@ -12,6 +12,7 @@ log.txt
 .vscode/
 
 datasets/dataset/dbc/
+datasets/dataset/dbc_source/
 datasets/dataset/maps/
 datasets/dataset/mmaps/
 datasets/dataset/vmaps/
@@ -19,13 +20,14 @@ datasets/dataset/Buildings/
 datasets/dataset/Cameras/
 datasets/dataset/luaxml/
 datasets/dataset/luaxml_source/
+datasets/dataset/lib/lualib/
+datasets/dataset/ids.txt
 
 GM.log
 datasets/dataset/modules.txt
 realms/*/worldserver.conf.dist
 realms/*/worldserver.conf
 realms/*/anticheat*
-datasets/dataset/ids.txt
 
 *.tga
 
@@ -39,9 +41,5 @@ datasets/dataset/ids.txt
 
 *.pdb
 
-datasets/dataset/dataset.conf
-
 deploy/.env
 deploy/tmp/*
-
-datasets/dataset/lib/lualib/
