@@ -9,6 +9,7 @@ DBErrors.log
 log.txt
 *_backup/
 .swcrc
+.vscode/
 
 datasets/dataset/dbc/
 datasets/dataset/maps/
