@@ -21,6 +21,7 @@ datasets/dataset/Cameras/
 datasets/dataset/luaxml/
 datasets/dataset/luaxml_source/
 datasets/dataset/lib/lualib/
+datasets/dataset/lib/lib/
 datasets/dataset/ids.txt
 
 GM.log
